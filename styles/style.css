@@ -16,6 +16,9 @@ html {
 	font-family: 'Fira Sans Condensed', sans-serif;
 	font-size: 18px;
 	background-color: #1b1919;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1,
@@ -50,16 +53,11 @@ ol {
 	background-color: #d9d9d9;
 }
 
-.page {
-	display: flex;
-	align-items: center;
-}
 
 .content {
 	display: flex;
 	align-items: flex-end;
 	width: 1140px;
-	height: 534px;
 	gap: 30px;
 }
 
@@ -67,7 +65,6 @@ ol {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	height: 54px;
 }
 
 .content__list {
@@ -104,16 +101,17 @@ ol {
 
 .content__video-card-description-container {
 	flex-grow: 1;
-	font-family: Fira Sans Condensed;
+	font-family: 'Fira Sans Condensed', Arial, Verdana, sans-serif;
 	font-weight: 400;
-	font-family: Fira Sans Condensed;
 	font-size: 18px;
 	line-height: 16.2px;
 	max-width: 196px;
-	max-height: 110px;
+}
+
+.content__video-card-description {
 	display: -webkit-box;
-	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
 	overflow: hidden;
 }
 
@@ -126,22 +124,19 @@ ol {
 
 .result__video {
 	width: 100%;
-	max-height: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
 .search-form__fieldset-title {
-	font-family: Fira Sans Condensed;
+	font-family: 'Fira Sans Condensed', Arial, Verdana, sans-serif;
 	font-weight: 400;
-	font-style: Regular;
 	font-size: 18px;
 	line-height: 100%;
-	letter-spacing: 0%;
 }
 
 .title {
-	font-family: Oswald;
-	font-weight: 700;
+	font-family: 'Oswald', Arial, Verdana, sans-serif;
 	font-size: 75px;
 	line-height: 94%;
 	text-transform: uppercase;
@@ -158,7 +153,7 @@ ol {
 }
 
 .content__video-card-title {
-	font-family: Oswald;
+	font-family: 'Oswald', Arial, Verdana, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 40px;
@@ -203,7 +198,7 @@ ol {
 	width: 225px;
 	height: 27px;
 	font-size: 18px;
-	font-family: Fira Sans Condensed;
+	font-family: 'Fira Sans Condensed', Arial, Verdana, sans-serif;
 	border: 1px solid white;
 	border-style: solid none solid none;
 	color: #fff;
@@ -262,13 +257,12 @@ ol {
 }
 
 .button {
-	border: 1px solid #fff;
+	border: 1px solid currentColor;
 	color: #fff;
 	background: transparent;
 	cursor: pointer;
-	font-family: Fira Sans Condensed;
+	font-family: 'Fira Sans Condensed', Arial, Verdana, sans-serif;
 	font-weight: 700;
-	font-style: Bold;
 	font-size: 18px;
 }
 
@@ -302,7 +296,6 @@ ol {
 }
 
 input:hover {
-	text-decoration: underline;
 	cursor: pointer;
 }
 
